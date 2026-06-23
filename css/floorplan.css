@@ -1,0 +1,220 @@
+/* ========================================
+   FLOORPLAN OVERLAY
+   ======================================== */
+.floorplan-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 10, 0.95);
+    z-index: 200;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-md);
+    backdrop-filter: blur(12px);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.floorplan-overlay.active {
+    display: flex;
+    opacity: 1;
+    animation: fadeIn 0.5s ease;
+}
+
+.floorplan-content {
+    max-width: 800px;
+    width: 100%;
+    position: relative;
+}
+
+.floorplan-close {
+    position: absolute;
+    top: -2rem;
+    right: 0;
+    background: transparent;
+    border: none;
+    color: var(--cream);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0.5;
+}
+
+.floorplan-close:hover {
+    opacity: 1;
+    transform: rotate(90deg);
+    color: var(--blush);
+}
+
+.floorplan-title {
+    font-family: var(--font-heading);
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    color: var(--cream);
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    letter-spacing: 0.05em;
+}
+
+.floorplan-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: var(--gold);
+    margin: 0.5rem auto;
+}
+
+.floorplan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.floorplan-room {
+    background: rgba(42, 42, 42, 0.4);
+    border: 1px solid rgba(201, 169, 110, 0.1);
+    border-radius: 8px;
+    padding: var(--spacing-md);
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.floorplan-room::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(201, 169, 110, 0.05), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.floorplan-room:hover {
+    border-color: var(--gold);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.floorplan-room:hover::before {
+    opacity: 1;
+}
+
+.floorplan-room .room-icon {
+    display: block;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.floorplan-room .room-name {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--cream);
+    margin-bottom: 0.2rem;
+}
+
+.floorplan-room .room-desc {
+    display: block;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.3);
+    font-family: var(--font-accent);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.floorplan-room .room-key {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+}
+
+.floorplan-room .room-key.found {
+    opacity: 1;
+    color: var(--gold);
+}
+
+.floorplan-room:hover .room-key {
+    opacity: 0.6;
+}
+
+.floorplan-room .room-key.found:hover {
+    opacity: 1;
+}
+
+.floorplan-legend {
+    text-align: center;
+    padding-top: var(--spacing-md);
+    border-top: 1px solid rgba(201, 169, 110, 0.05);
+}
+
+.legend-key {
+    font-family: var(--font-accent);
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.2);
+    letter-spacing: 0.05em;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+@media (max-width: 768px) {
+    .floorplan-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: var(--spacing-sm);
+    }
+    
+    .floorplan-room {
+        padding: var(--spacing-sm);
+    }
+    
+    .floorplan-room .room-icon {
+        font-size: 2rem;
+    }
+    
+    .floorplan-room .room-name {
+        font-size: 0.9rem;
+    }
+    
+    .floorplan-room .room-desc {
+        font-size: 0.6rem;
+    }
+    
+    .floorplan-close {
+        top: -1rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .floorplan-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+    
+    .floorplan-room {
+        padding: 0.8rem;
+    }
+    
+    .floorplan-room .room-icon {
+        font-size: 1.5rem;
+    }
+    
+    .floorplan-room .room-name {
+        font-size: 0.8rem;
+    }
+    
+    .floorplan-room .room-desc {
+        font-size: 0.5rem;
+    }
+}
