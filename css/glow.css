@@ -1,0 +1,189 @@
+/* ========================================
+   GLOW EFFECT - Signature Element
+   ======================================== */
+
+/* The glow container that follows cursor */
+.glow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.glow-circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle,
+        rgba(232, 180, 184, 0.15) 0%,
+        rgba(232, 180, 184, 0.05) 40%,
+        rgba(232, 180, 184, 0.02) 60%,
+        transparent 80%
+    );
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease;
+    will-change: transform, width, height;
+    filter: blur(1px);
+}
+
+/* Inner brighter core */
+.glow-circle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle,
+        rgba(232, 180, 184, 0.4) 0%,
+        transparent 100%
+    );
+    transform: translate(-50%, -50%);
+}
+
+/* Glow intensity variants per room */
+.room[data-room="foyer"] .glow-container .glow-circle {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(
+        circle,
+        rgba(232, 180, 184, 0.2) 0%,
+        rgba(232, 180, 184, 0.08) 40%,
+        rgba(232, 180, 184, 0.02) 70%,
+        transparent 100%
+    );
+}
+
+.room[data-room="study"] .glow-container .glow-circle {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(
+        circle,
+        rgba(232, 180, 184, 0.08) 0%,
+        rgba(232, 180, 184, 0.03) 50%,
+        transparent 100%
+    );
+}
+
+.room[data-room="gallery"] .glow-container .glow-circle {
+    width: 280px;
+    height: 280px;
+}
+
+.room[data-room="atelier"] .glow-container .glow-circle {
+    width: 260px;
+    height: 260px;
+}
+
+.room[data-room="garden"] .glow-container .glow-circle {
+    width: 240px;
+    height: 240px;
+}
+
+/* Pulsing animation for mobile */
+.glow-pulse {
+    animation: pulseGlow 3s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.6;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.1);
+        opacity: 1;
+    }
+}
+
+/* Illuminate content - subtle brightness increase */
+.glow-container.illuminate .glow-circle {
+    mix-blend-mode: screen;
+}
+
+/* Ambient light overlay */
+.glow-ambient {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    background: radial-gradient(
+        ellipse at center,
+        rgba(232, 180, 184, 0.03) 0%,
+        transparent 70%
+    );
+    opacity: 0.5;
+    transition: opacity 2s ease;
+}
+
+/* Vignette overlay for atmosphere */
+.glow-vignette {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+    background: radial-gradient(
+        ellipse at center,
+        transparent 50%,
+        rgba(0, 0, 0, 0.4) 100%
+    );
+}
+
+/* ========================================
+   RESPONSIVE GLOW
+   ======================================== */
+@media (max-width: 768px) {
+    .glow-circle {
+        width: 180px !important;
+        height: 180px !important;
+        background: radial-gradient(
+            circle,
+            rgba(232, 180, 184, 0.12) 0%,
+            rgba(232, 180, 184, 0.04) 40%,
+            transparent 70%
+        ) !important;
+    }
+    
+    .glow-circle::after {
+        width: 30%;
+        height: 30%;
+        background: radial-gradient(
+            circle,
+            rgba(232, 180, 184, 0.3) 0%,
+            transparent 100%
+        ) !important;
+    }
+    
+    .glow-ambient {
+        opacity: 0.3;
+    }
+    
+    .glow-vignette {
+        background: radial-gradient(
+            ellipse at center,
+            transparent 30%,
+            rgba(0, 0, 0, 0.5) 100%
+        );
+    }
+}
+
+@media (max-width: 480px) {
+    .glow-circle {
+        width: 120px !important;
+        height: 120px !important;
+    }
+}
