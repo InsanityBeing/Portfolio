@@ -1,0 +1,51 @@
+{
+  "photos": [
+    {
+      "src": "assets/images/gallery/photo-1.jpg",
+      "alt": "Dark moody landscape with fog",
+      "title": "Whispers in the Mist"
+    },
+    {
+      "src": "assets/images/gallery/photo-2.jpg",
+      "alt": "Victorian architecture in black and white",
+      "title": "Victorian Echoes"
+    },
+    {
+      "src": "assets/images/gallery/photo-3.jpg",
+      "alt": "Portrait in dramatic lighting",
+      "title": "The Gaze"
+    },
+    {
+      "src": "assets/images/gallery/photo-4.jpg",
+      "alt": "Empty room with candlelight",
+      "title": "Flicker"
+    },
+    {
+      "src": "assets/images/gallery/photo-5.jpg",
+      "alt": "Foggy forest path",
+      "title": "The Path"
+    },
+    {
+      "src": "assets/images/gallery/photo-6.jpg",
+      "alt": "Old library shelves",
+      "title": "Library of Shadows"
+    }
+  ],
+  "videos": [
+    {
+      "youtubeId": "dQw4w9WgXcQ",
+      "title": "Sample Video 1",
+      "description": "A cinematic piece exploring light and shadow."
+    },
+    {
+      "youtubeId": "dQw4w9WgXcQ",
+      "title": "Sample Video 2",
+      "description": "A documentary-style short film about creative process."
+    },
+    {
+      "youtubeId": "dQw4w9WgXcQ",
+      "title": "Sample Video 3",
+      "description": "A brand identity film for a luxury client."
+    }
+  ]
+}
