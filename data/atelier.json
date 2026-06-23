@@ -1,0 +1,23 @@
+[
+  {
+    "id": "atelier-1",
+    "title": "Project: The Darkened Manor",
+    "description": "A complete brand identity for a luxury fragrance brand.",
+    "thumbnail": "assets/images/atelier/project-1.jpg",
+    "fullContent": "<p><strong>Client:</strong> Darkened Manor Fragrances</p><p><strong>Brief:</strong> Create a brand identity that captures the essence of Victorian gothic romance.</p><p><strong>Approach:</strong> Developed a visual language combining dark academia with delicate femininity. Created a color palette of charcoal, black, and blush with gold accents. Designed packaging, website, and social media presence.</p><p><strong>Result:</strong> The brand launched with a 200% increase in pre-orders and was featured in Vogue.</p><img src='assets/images/atelier/project-1-detail.jpg' alt='Project detail'>"
+  },
+  {
+    "id": "atelier-2",
+    "title": "Project: The Last Light Film",
+    "description": "Creative direction and production for a sci-fi short film.",
+    "thumbnail": "assets/images/atelier/project-2.jpg",
+    "fullContent": "<p><strong>Client:</strong> Independent Production Company</p><p><strong>Brief:</strong> Direct a short film that explores themes of memory, isolation, and hope.</p><p><strong>Approach:</strong> Developed the visual aesthetic, directed cinematography, and oversaw post-production. The film was shot entirely in natural light to create a haunting atmosphere.</p><p><strong>Result:</strong> The film won Best Short at the Melbourne International Film Festival.</p><img src='assets/images/atelier/project-2-detail.jpg' alt='Project detail'>"
+  },
+  {
+    "id": "atelier-3",
+    "title": "Project: Social Media Strategy - The Canvas Project",
+    "description": "A 360-degree social media campaign for an arts organization.",
+    "thumbnail": "assets/images/atelier/project-3.jpg",
+    "fullContent": "<p><strong>Client:</strong> The Canvas Project, a non-profit arts organization</p><p><strong>Brief:</strong> Increase engagement and donations through a social-first campaign.</p><p><strong>Approach:</strong> Developed a 6-month content strategy including video series, interactive Instagram stories, and community engagement initiatives. Created a visual identity that unified all platforms.</p><p><strong>Result:</strong> 150% increase in engagement, 40% increase in donations.</p><img src='assets/images/atelier/project-3-detail.jpg' alt='Project detail'>"
+  }
+]
