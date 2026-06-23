@@ -1,0 +1,102 @@
+[
+  {
+    "id": "writing-1",
+    "title": "Sample Script",
+    "category": "Script",
+    "excerpt": "A short film exploring the intersection of memory and place.",
+    "sections": [
+      {
+        "heading": "Logline",
+        "content": "A woman returns to her childhood home and discovers that memories live in the walls."
+      },
+      {
+        "heading": "Scene 1",
+        "content": "INT. OLD HOUSE - DAY. Dust motes dance in the afternoon light. The sound of floorboards creaking under careful footsteps."
+      },
+      {
+        "heading": "Scene 2",
+        "content": "EXT. GARDEN - CONTINUOUS. Overgrown roses crawl up a trellis. A forgotten swing moves gently in the breeze."
+      }
+    ]
+  },
+  {
+    "id": "writing-2",
+    "title": "Treatment: The Last Light",
+    "category": "Treatment",
+    "excerpt": "A sci-fi drama about a lighthouse keeper at the end of the world.",
+    "sections": [
+      {
+        "heading": "Logline",
+        "content": "The last lighthouse keeper on a dying Earth must decide whether to save one final ship or protect the secret that could save humanity."
+      },
+      {
+        "heading": "Character Breakdown",
+        "content": "ELARA (30s) - A stoic woman who has spent ten years alone in the lighthouse. She speaks to recordings of her deceased mentor."
+      },
+      {
+        "heading": "Act 1",
+        "content": "The lighthouse stands on a cliff at the edge of the world. The seas are rising. The last ships have stopped coming."
+      }
+    ]
+  },
+  {
+    "id": "writing-3",
+    "title": "Research Paper: Visual Storytelling in Marketing",
+    "category": "Research",
+    "excerpt": "An analysis of how visual narrative drives consumer engagement.",
+    "sections": [
+      {
+        "heading": "Abstract",
+        "content": "This paper examines the relationship between visual narrative techniques and consumer engagement across digital platforms."
+      },
+      {
+        "heading": "Methodology",
+        "content": "A mixed-methods approach combining quantitative analysis of engagement metrics with qualitative interviews of creative directors."
+      },
+      {
+        "heading": "Findings",
+        "content": "Brands that use consistent visual narratives see 40% higher engagement rates and 25% higher brand recall."
+      }
+    ]
+  },
+  {
+    "id": "writing-4",
+    "title": "Script: The Last Letter",
+    "category": "Script",
+    "excerpt": "A period drama about a love story told through letters.",
+    "sections": [
+      {
+        "heading": "Logline",
+        "content": "In 1940s England, a woman discovers a hidden box of letters that reveal a decades-old love story."
+      },
+      {
+        "heading": "Scene 1",
+        "content": "INT. ATTIC - DAY. Dusty boxes stacked in corners. A single beam of light illuminates an old leather box."
+      },
+      {
+        "heading": "Scene 2",
+        "content": "EXT. COUNTRYSIDE - FLASHBACK. Two figures walking through a field of wildflowers. The sun is setting."
+      }
+    ]
+  },
+  {
+    "id": "writing-5",
+    "title": "Treatment: Echoes",
+    "category": "Treatment",
+    "excerpt": "A psychological thriller about memory and identity.",
+    "sections": [
+      {
+        "heading": "Logline",
+        "content": "A woman wakes in a facility with no memory of who she is and must piece together her identity before her past catches up to her."
+      },
+      {
+        "heading": "Character Breakdown",
+        "content": "MAYA (20s) - A woman with amnesia who discovers she has skills she can't explain."
+      },
+      {
+        "heading": "Act 1",
+        "content": "A stark white room. A woman's eyes open. She doesn't know where she is or who she is."
+      }
+    ]
+  }
+]
