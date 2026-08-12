@@ -3,12 +3,17 @@
    ======================================== */
 :root {
     /* Colors */
-    --charcoal: #2A2A2A;
-    --black: #0A0A0A;
-    --blush: #E8B4B8;
-    --blush-glow: rgba(232, 180, 184, 0.3);
-    --gold: #C9A96E;
-    --cream: #F5EEE6;
+    --charcoal: #2A2A2A
+   --dark-charcoal: #1A1A1A
+   --black: #0A0A0A
+   --powder-blue: #B4C7D9
+   --baby-blue: #D4E0ED
+   --gold: #C9A96E
+   --yellow-gold: #E8C84A
+   --dark-red: #8B1A1A
+   --deep-burgundy: #5C1010
+   --cream: #F5EEE6
+   --warm-cream: #F0E6D3
     --shadow: rgba(0, 0, 0, 0.8);
     
     /* Typography */
