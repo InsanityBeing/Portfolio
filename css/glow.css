@@ -21,9 +21,9 @@
     border-radius: 50%;
     background: radial-gradient(
         circle,
-        rgba(180, 199, 217, 0.15) 0%,
-        rgba(180, 199, 217, 0.15) 40%,
-        rgba(180, 199, 217, 0.15) 60%,
+        rgba(180, 212, 232, 0.15) 0%,
+        rgba(180, 212, 232, 0.15) 40%,
+        rgba(180, 212, 232, 0.15) 60%,
         transparent 80%
     );
     transform: translate(-50%, -50%);
@@ -43,7 +43,7 @@
     border-radius: 50%;
     background: radial-gradient(
         circle,
-        rgba(180, 199, 217, 0.15) 0%,
+        rgba(180, 212, 232, 0.3) 0%,
         transparent 100%
     );
     transform: translate(-50%, -50%);
