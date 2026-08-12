@@ -2,18 +2,16 @@
    VARIABLES & RESET
    ======================================== */
 :root {
-    /* Colors */
-    --charcoal: #2A2A2A
-   --dark-charcoal: #1A1A1A
-   --black: #0A0A0A
-   --powder-blue: #B4C7D9
-   --baby-blue: #D4E0ED
-   --gold: #C9A96E
-   --yellow-gold: #E8C84A
-   --dark-red: #8B1A1A
-   --deep-burgundy: #5C1010
-   --cream: #F5EEE6
-   --warm-cream: #F0E6D3
+    /* Backgrounds - stay the same */
+    --charcoal: #2A2A2A;
+    --black: #0A0A0A;
+    
+    /* NEW COLORS */
+    --powder-blue: #B4D4E8;        /* Light/pastel powder blue */
+    --blue-glow: rgba(180, 212, 232, 0.25);  /* Glow effect */
+    --gold: #B4A76C;               /* Antique/bronze gold */
+    --red: #8B1A1A;                /* Dark red */
+    --cream: #F5EEE6;
     --shadow: rgba(0, 0, 0, 0.8);
 
 /* Glow Color (Change from blush to powder blue) */
