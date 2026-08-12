@@ -1,0 +1,108 @@
+/* DOOR - Dark wood with gold hardware */
+.door-left,
+.door-right {
+    background: linear-gradient(145deg, #3a2a1a, #1a1008); /* Dark wood */
+    border: 2px solid var(--gold);  /* Gold border */
+}
+
+.door-handle {
+    background: var(--gold);  /* Gold handle */
+    box-shadow: 0 0 20px rgba(180, 167, 108, 0.3);  /* Gold glow */
+}
+
+.door-handle:hover {
+    box-shadow: 0 0 40px rgba(180, 167, 108, 0.6);
+}
+
+/* HERO TEXT - Gold */
+.hero-title {
+    color: var(--gold);
+    text-shadow: 0 0 60px rgba(180, 167, 108, 0.15);
+}
+
+/* TITLE ROLES - Cream (readable) */
+.title-role {
+    color: var(--cream);
+    letter-spacing: 0.15em;
+}
+
+/* TAGLINE - Gold */
+.hero-tagline {
+    color: var(--gold);
+}
+
+/* ENTER ARROW - Red pulsating */
+.enter-arrow {
+    color: var(--red);
+    animation: floatArrowRed 2s ease-in-out infinite;
+}
+
+@keyframes floatArrowRed {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+}
+
+/* ENTER TEXT - Cream with red accent */
+.enter-text {
+    color: rgba(255, 255, 255, 0.4);
+}
+.enter-text .highlight {
+    color: var(--red);
+}
+                                /* LINKS - Red */
+a {
+    color: var(--red);
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: var(--gold);  /* Turns gold on hover */
+}
+
+/* BUTTONS - Red accents */
+.submit-btn {
+    border: 1px solid var(--red);
+    color: var(--cream);
+}
+.submit-btn:hover {
+    background: var(--red);
+    border-color: var(--gold);
+    box-shadow: 0 0 30px rgba(139, 26, 26, 0.2);
+}
+
+/* GALLERY TAB BUTTONS - Red active state */
+.gallery-tab.active {
+    color: var(--red);
+}
+.gallery-tab.active::after {
+    background: var(--red);
+}
+
+/* WRITING CARD READ MORE - Red */
+.writing-card .card-readmore {
+    color: var(--red);
+}
+.writing-card:hover .card-readmore {
+    color: var(--gold);
+}
+
+/* ACCORDION TITLES - Gold with red accents */
+.accordion-header .accordion-title {
+    color: var(--cream);
+}
+.accordion-header .accordion-arrow {
+    color: var(--red);
+}
+.accordion-item.active .accordion-arrow {
+    color: var(--gold);
+}
+
+/* GARDEN LINKS - Red */
+.garden-link {
+    border: 1px solid rgba(139, 26, 26, 0.2);
+    color: rgba(255, 255, 255, 0.4);
+}
+.garden-link:hover {
+    color: var(--red);
+    border-color: var(--red);
+    background: rgba(139, 26, 26, 0.05);
+}
