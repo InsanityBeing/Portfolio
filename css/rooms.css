@@ -106,3 +106,16 @@ a:hover {
     border-color: var(--red);
     background: rgba(139, 26, 26, 0.05);
 }
+
+/* AUDIO BUTTON - Gold border + cream icon */
+.audio-toggle {
+    background: rgba(10, 10, 10, 0.8);
+    border: 1px solid var(--gold);
+    color: var(--cream);
+}
+
+.audio-toggle:hover {
+    border-color: var(--gold);
+    box-shadow: 0 0 20px rgba(180, 167, 108, 0.2);
+    transform: scale(1.1);
+}
