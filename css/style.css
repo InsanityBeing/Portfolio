@@ -351,7 +351,7 @@ a:hover {
 .footer-watermark {
     font-family: var(--font-heading);
     font-style: italic;
-    color: rgba(232, 180, 184, 0.2);
+    color: rgba(180, 212, 232, 0.15);
     font-size: 0.8rem;
     letter-spacing: 0.1em;
 }
@@ -363,6 +363,9 @@ a:hover {
     letter-spacing: 0.05em;
 }
 
+.footer-keys span {
+    color: var(--gold);  /* The number is gold */
+}
 /* ========================================
    UTILITY
    ======================================== */
